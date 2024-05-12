@@ -9,7 +9,7 @@ import transactions from './../json/transactions.json';
 
 export const App = () => {
   return (
-    <div>
+    <div className="container">
       <Profile
         username={user.username}
         tag={user.tag}

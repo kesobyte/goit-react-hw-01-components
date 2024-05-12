@@ -1,12 +1,48 @@
 .status {
   border-radius: 50%;
-  padding: 1px 10px;
 }
 
 .online {
   background-color: #4daf51;
+  width: 18px;
+  height: 18px;
 }
 
 .offline {
   background-color: #fe5058;
+  width: 18px;
+  height: 18px;
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 320px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 15px;
+}
+
+.item:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.avatar {
+  background-color: rgb(157, 142, 180);
+  width: 68px;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
 }

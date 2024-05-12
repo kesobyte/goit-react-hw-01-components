@@ -4,9 +4,9 @@ import clsx from 'clsx';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <ul className={css['friend-list']}>
       {friends.map(friend => (
-        <li className="item" key={friend.id}>
+        <li className={css.item} key={friend.id}>
           <span
             className={clsx(css.status, {
               [css.online]: friend.isOnline,
@@ -16,12 +16,12 @@ export const FriendList = ({ friends }) => {
             {friend.isOnline}
           </span>
           <img
-            className="avatar"
+            className={css.avatar}
             src={friend.avatar}
             alt="User avatar"
             width="48"
           />
-          <p className="name">{friend.name}</p>
+          <p className={css.name}>{friend.name}</p>
         </li>
       ))}
     </ul>
