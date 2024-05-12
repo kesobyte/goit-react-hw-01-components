@@ -1,0 +1,12 @@
+.status {
+  border-radius: 50%;
+  padding: 1px 10px;
+}
+
+.online {
+  background-color: #4daf51;
+}
+
+.offline {
+  background-color: #fe5058;
+}
