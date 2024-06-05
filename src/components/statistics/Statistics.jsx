@@ -14,7 +14,7 @@ export const Statistics = ({ stats }) => {
     <section className={css.statistics}>
       <h2 className={css.title}>Upload stats</h2>
 
-      <ul className={css['stat-list']}>
+      <ul className={css.statList}>
         {stats.map(stat => (
           <li
             className={css.item}
@@ -34,9 +34,9 @@ export const Statistics = ({ stats }) => {
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      label: PropTypes.string,
-      percentage: PropTypes.number,
-    })
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
   ),
 };

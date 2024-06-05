@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 export const FriendList = ({ friends }) => {
   return (
-    <ul className={css['friend-list']}>
+    <ul className={css.friendList}>
       {friends.map(friend => (
         <li className={css.item} key={friend.id}>
           <span
@@ -32,10 +32,10 @@ export const FriendList = ({ friends }) => {
 FriendList.propTypes = {
   friend: PropTypes.arrayOf(
     PropTypes.shape({
-      avatar: PropTypes.string,
-      name: PropTypes.string,
-      isOnline: PropTypes.bool,
-      id: PropTypes.number,
-    })
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    }).isRequired
   ),
 };

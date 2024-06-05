@@ -1,20 +1,18 @@
 .status {
   border-radius: 50%;
+  width: 18px;
+  height: 18px;
 }
 
 .online {
   background-color: #4daf51;
-  width: 18px;
-  height: 18px;
 }
 
 .offline {
   background-color: #fe5058;
-  width: 18px;
-  height: 18px;
 }
 
-.friend-list {
+.friendList {
   display: flex;
   flex-direction: column;
   gap: 10px;
